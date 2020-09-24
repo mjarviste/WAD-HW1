@@ -43,7 +43,7 @@
 }
 .input-field{
     width: 50%;
-    padding: 10px 0;
+    padding: 10px;
     margin: 5px 0;
     border-style: ridge;
     border-color: darkgray;
@@ -58,7 +58,7 @@
 }
 .logo-image img{
     display:block;
-    position: relative;
-    height: 60px;
-    width: 60px;   
+    position: fixed;
+    height: 70px;
+    width: 70px;   
 }
