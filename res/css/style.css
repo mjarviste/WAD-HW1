@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .main {
@@ -118,36 +119,112 @@ nav div.search-container>button {
     ;
 }
 
-.feed {
+
+.flex-container{
     height: 100%;
     width: 80%;
-    background-color: red;
-    margin: 50px auto auto auto;
+    display: flex;
+    flex-direction: space-between;
+    justify-content: center;
+    margin: auto auto auto auto;
 }
 
-.feed ul {
+.flex-container ul{
     margin: 15px;
     padding: 0;
 }
 
-.feed ul li {
+.flex-container ul li {
+
     list-style: none;
+
 }
 
-.feed ul li div {
-    margin: auto;
+.flex-container ul li div {
+
+    margin: 20px 0;
+
 }
 
-.feed ul li div::after {
+.flex-container ul li div::after {
+
     content: "";
+
     display: block;
+
     clear: both;
+
 }
 
-.feed ul li img {
-    width: 35%;
-    height: 100px;
-    object-fit: cover;
-    float: left;
-    margin-right: 20px;
+
+.flex-container ul li img{
+    border: 1px solid rgb(192, 189, 189);
+    border-radius: 4px;
+    box-shadow: 0px 10px 10px gray;
+    padding-top: 20px;
+    padding-right: auto;
+    padding-left: auto;
+    padding-bottom: auto;
+    width: 150px;
 }
+
+.flex-container ul li h1{
+    margin: 15px 15px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+
+}
+
+.thumbButton{
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 80%;
+    height: 37px;
+    width: 16%;
+    padding: 5px;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    background-color: #4267B2;
+    background-image: url(res/images/thumb.png);
+
+}
+
+
+.flex-container > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .column {
+    flex: 80%;
+    max-width: 80%;
+    padding: 0 4px;
+    margin-top: 50px;
+    margin-bottom: 0 0;
+  }
+
+  .column img {
+    height: 100%;
+    width: 80%;
+    margin-top: 5px;
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 1000px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media (max-width: 1000px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
