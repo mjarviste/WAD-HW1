@@ -14,7 +14,7 @@
     }
     
     .form-box {
-        height: 400px;
+        height: 450px;
         width: 350px;
         position: relative;
         margin: 10% auto;
@@ -63,6 +63,7 @@
         display: block;
         margin: -15px auto;
         border: 30px;
+        background-color: #4267B2;
     }
     
     .logo-image img {
@@ -150,6 +151,28 @@
     #last-container {
         align-self: flex-end;
     }
+    #header_icon {
+        display: inline-flexbox;
+        position: fixed;
+        margin: 3px 3px 1% 1%;
+        width: 8%;
+        padding: 3px 1% 3px 1%;
+    }
+
+    #icon {
+        display: inline-flexbox;
+        margin: 0 0 2% 2%;
+        width: 8%;
+        padding: 0 2% 3px 2%;
+    }
+
+    #icon h2 {
+        display: inline-flexbox;
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 30%;
+        color: gray;
+    }
     
     .flex-container ul li div::after {
         content: "";
@@ -168,6 +191,7 @@
         font-weight: bold;
         color: gray;
     }
+
     
     .thumbButton {
         box-sizing: border-box;
@@ -180,6 +204,15 @@
         border-radius: 5px;
         cursor: pointer;
         background-color: #4267B2;
+    }
+
+    .icon {
+
+        margin: 0 0 1% 2%;
+        width: 8%;
+        padding: 5px 2% 0 2%;
+        width: 35px; 
+        height:25px;
     }
     
     .flex-container>div {
