@@ -194,11 +194,9 @@ nav div.search-container>button {
 }
 
 .container-header p {
-
     color: gray;
-    margin: 5px 5px 5px 600px;
-    font-size: 10px;
-    
+    margin: 5px;
+    font-size: 12px;
 }
 
 .thumbButton {
